@@ -1,0 +1,87 @@
+{% schema %}
+ {
+  "name": "Carousel with text",
+  "tag": "section",
+  "class": "carousel-with-text",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Padding"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 36
+    }
+  ],
+  "blocks": [
+    {
+      "type": "slide",
+      "name": "slide",
+      "settings": [
+        {
+          "type": "text",
+          "id": "block_heading",
+          "label": "Heading",
+          "default": "Exquisite Watches"
+        },
+        {
+          "type": "richtext",
+          "id": "block_subheading",
+          "label": "Sub Heading",
+          "default": "<p>Gold Luxury, Choose Us</p>"
+        },
+        {
+          "type": "richtext",
+          "id": "block_description",
+          "label": "Description",
+          "default": "<p>Discover the Perfect Watch for Every Occasion and Elevate Your Style with Timeless Elegance and Precision Craftsmanship - watch</p>"
+        },
+        {
+          "type": "text",
+          "id": "block_price",
+          "label": "Price",
+          "default": "$499.00"
+        },
+        {
+          "type": "checkbox",
+          "id": "social_icons",
+          "label": "Social icons",
+          "default": true
+        },
+        {
+          "type": "image_picker",
+          "id": "block_image",
+          "label": "Image",
+          "info": "Recommended Size:  500 x 650"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Carousel with text",
+      "blocks": [
+        {
+          "type": "slide"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
